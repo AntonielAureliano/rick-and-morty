@@ -1,4 +1,6 @@
-import { useState } from 'react'
+import { useState } from 'react';
+import { TitleLogo } from './components';
+
 import './App.css'
 
 function App() {
@@ -6,7 +8,7 @@ function App() {
 
   return (
     <div>
-
+      <TitleLogo />
     </div>
   )
 }
