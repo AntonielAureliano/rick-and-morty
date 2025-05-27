@@ -3,3 +3,16 @@
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 1rem;
 }
+
+.pagination {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.pagination span {
+    color: #97ce4c;
+    font-weight: 600;
+}

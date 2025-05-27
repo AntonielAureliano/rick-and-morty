@@ -7,6 +7,11 @@
     padding: 1rem;
 }
 
+.card img {
+    border-radius: 8px;
+    max-width: 300px;
+}
+
 .cardStatus {
     align-items: center;
     display: flex;
