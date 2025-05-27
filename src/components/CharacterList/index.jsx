@@ -11,6 +11,14 @@ export const CharacterList = () => {
     const [page, setPage] = useState(1);
     const [info, setInfo] = useState({});
 
+    const handleNext = () => {
+        if(info.next) setPage((prev) => prev + 1);
+    }
+
+    const handlePrev = () => {
+        if(info.prev) setPage((prev) => prev - 1);
+    }
+
     useEffect(() => {
         setLoading(true);
         axios.get(`https://rickandmortyapi.com/api/character/?page=${page}`)
@@ -36,9 +44,9 @@ export const CharacterList = () => {
                 ))}
             </div>
             <div className={styles.pagination}>
-                <Button>Previous</Button>
+                <Button handle={handlePrev}>Previous</Button>
                 <span>{page}</span>
-                <Button>Next</Button>
+                <Button handle={handleNext}>Next</Button>
             </div>
         </div>
     )
