@@ -1,14 +1,14 @@
-import { useState } from 'react';
-import { TitleLogo } from './components';
+
+import { TitleLogo, CharacterList } from './components';
 
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <div>
       <TitleLogo />
+      <CharacterList />
     </div>
   )
 }
