@@ -1,10 +1,14 @@
 .card {
+    align-items: center;
     background-color: #e4a788;
     border-radius: 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     color: #1e4d2b;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     text-align: center;
-    padding: 1rem;
+    padding: 1rem;    
 }
 
 .card img {
@@ -22,4 +26,14 @@
 .cardStatus img {
     height: 16px;
     width: 16px;
+}
+
+.cardCharacteristics {
+    font-weight: 600;
+}
+
+@media (max-width: 500px) {
+    .card {
+        max-width: 300px;
+    }
 }

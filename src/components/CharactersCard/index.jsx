@@ -10,10 +10,10 @@ export const CharactersCard = ({ character }) => {
             <h3>{character.name}</h3>
             <div className={styles.cardStatus}>
                 <img src={character.status === "Alive" ? iconAlive : iconDead} alt="" />
-                <p>Status: {character.status}</p>
+                <p>Status: <span className={styles.cardCharacteristics}>{character.status}</span></p>
             </div>
-            <p>Specie: {character.species}</p>
-            <p>Origin: {character.origin.name}</p>
+            <p>Specie: <span className={styles.cardCharacteristics}>{character.species}</span></p>
+            <p>Origin: <span className={styles.cardCharacteristics}>{character.origin.name}</span></p>
         </div>
     )
 }
