@@ -7,6 +7,7 @@ export const TitleLogo = () => {
             <a href="">
                 <img src={logo} alt="" />
             </a>
+            <h1 className={styles.title}>Rick and Morty Characters</h1>
         </div>
     )
 }
